@@ -28,7 +28,7 @@ func main() {
 	fmt.Println(ps.Encode())
 
 	// http.PostForm()でPOSTメソッドを発行
-	res, err := http.PostForm("localhost", ps)
+	res, err := http.PostForm("http://localhost:8080/user", ps)
 	if err != nil {
 		log.Fatal(err)
 	}
